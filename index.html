@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Gym App</title>
+</head>
+<body> 
+<div class="container">
+    <!-- memebership type section -->
+<div class="wrapperTypeMemebership">
+ <!-- name is the same coz user can pick only one option if different name user can choose many option -->
+<div><input type="radio" name="memberType" id="goldMemberID" /><p>Gold Member | $300 Monthly</p>
+<div><input type="radio" name="memberType" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
+<div><input type="radio" name="memberType" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
+</div>
+</div>
+
+    <!-- memebership detail section -->
+<div class="memberDetailwrapper">
+
+    <div><input type="text" name="memberName" id="memberNameID" /><p>Member Name</p>
+    <div><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
+    <div><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
+    <div><input type="text" name="age" id="ageID" /><p>Member Age</p></div>
+    <div><input type="text" name="email" id="emailID" /><p>Email</p></div>
+    <div><input type="text" name="phone" id="phoneID" /><p>Phone Number</p></div>
+    <button>Submit</button>
+</div>
+
+ <!-- instrutor or no  section -->
+<div>
+    <h3>Woulld you like to book a personal trainer?</h3>
+    <div><input type="checkbox" name="trainerYN" id="trainerOptionID" /><p>Personal Trainer Option</p>  
+
+</div>
+
+<div>
+    <h3>Woulld you like to subcribe monthly or yearly?</h3>
+    <div><input type="radio" name="subcribeMY" id="monthlyPayID" /><p>Monthly</p>  
+        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" /><p>Yearly</p>  
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
