@@ -6,7 +6,10 @@
     <title>Booking Gym App</title>
 </head>
 <body> 
+
+    <form name="memberForm">
 <div class="container">
+
     <!-- memebership type section -->
 <div class="wrapperTypeMemebership">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
@@ -14,6 +17,49 @@
 <div><input type="radio" name="memberType" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
 <div><input type="radio" name="memberType" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
 </div>
+</div>
+
+
+
+
+<div>
+    <h3>Gym Classes</h3>
+<div>
+<img src=""/>
+<p>Yoga</p>
+<div><input type="checkbox" name="gymClassName" id="yogaClassID" /><p>Male</p></div>
+<p>Price: 10 classes for $200</p>
+</div>
+
+<div>
+        <img src=""/>
+        <p>Boxing</p>
+        <div><input type="checkbox" name="gymClassName" id="boxingClassID" /><p>Male</p></div>
+        <p>Price: 10 classes for $300</p>
+        </div>
+
+
+        <div>
+            <img src=""/>
+            <p>Pilates</p>
+            <div><input type="checkbox" name="gymClassName" id="pilatesClassID" /><p>Male</p></div>
+            <p>Price: 10 classes for $250</p>
+            </div>
+
+            <div>
+                <img src=""/>
+                <p>Intense Training</p>
+                <div><input type="checkbox" name="gymClassName" id="intenseClassID" /><p>Male</p></div>
+                <p>Price: 10 classes for $350</p>
+                </div>
+
+                <div>
+                    <img src=""/>
+                    <p>Cycling</p>
+                    <div><input type="checkbox" name="gymClassName" id="cyclingClassID" /><p>Male</p></div>
+                    <p>Price: 10 classes for $200</p>
+                </div>
+    
 </div>
 
     <!-- memebership detail section -->
@@ -25,7 +71,7 @@
     <div><input type="text" name="age" id="ageID" /><p>Member Age</p></div>
     <div><input type="text" name="email" id="emailID" /><p>Email</p></div>
     <div><input type="text" name="phone" id="phoneID" /><p>Phone Number</p></div>
-    <button>Submit</button>
+
 </div>
 
  <!-- instrutor or no  section -->
@@ -41,7 +87,9 @@
         <div><input type="radio" name="subcribeMY" id="yearlyyPayID" /><p>Yearly</p>  
 </div>
 
+<button>Submit</button>
 
+</form>
     <script src="index.js"></script>
 </body>
 </html>
