@@ -4,64 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Gym App</title>
+    <script src="index.js"></script>
 </head>
 <body> 
 
     <form name="memberForm">
 <div class="container">
 
+   
     <!-- memebership type section -->
 <div class="wrapperTypeMemebership">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
-<div><input type="radio" name="memberType" id="goldMemberID" /><p>Gold Member | $300 Monthly</p>
-<div><input type="radio" name="memberType" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
-<div><input type="radio" name="memberType" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
+<div><input type="radio" name="memberType" value="300" id="goldMemberID" /><p>Gold Member | $300 Monthly</p>
+<div><input type="radio" name="memberType" value="200" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
+<div><input type="radio" name="memberType" value="100" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
 </div>
 </div>
-
-
-
 
 <div>
     <h3>Gym Classes</h3>
 <div>
 <img src=""/>
 <p>Yoga</p>
-<div><input type="checkbox" name="gymClassName" id="yogaClassID" /><p>Male</p></div>
+<div><input type="checkbox"  value="200" name="gymClassName" id="yogaClassID" /><p>Male</p></div>
 <p>Price: 10 classes for $200</p>
 </div>
 
 <div>
         <img src=""/>
         <p>Boxing</p>
-        <div><input type="checkbox" name="gymClassName" id="boxingClassID" /><p>Male</p></div>
+        <div><input type="checkbox" value="300" name="gymClassName" id="boxingClassID" /><p>Male</p></div>
         <p>Price: 10 classes for $300</p>
         </div>
-
-
         <div>
             <img src=""/>
             <p>Pilates</p>
-            <div><input type="checkbox" name="gymClassName" id="pilatesClassID" /><p>Male</p></div>
+            <div><input type="checkbox" value="250" name="gymClassName" id="pilatesClassID" /><p>Male</p></div>
             <p>Price: 10 classes for $250</p>
             </div>
 
             <div>
                 <img src=""/>
                 <p>Intense Training</p>
-                <div><input type="checkbox" name="gymClassName" id="intenseClassID" /><p>Male</p></div>
+                <div><input type="checkbox" value="350" name="gymClassName" id="intenseClassID" /><p>Male</p></div>
                 <p>Price: 10 classes for $350</p>
                 </div>
 
                 <div>
                     <img src=""/>
                     <p>Cycling</p>
-                    <div><input type="checkbox" name="gymClassName" id="cyclingClassID" /><p>Male</p></div>
+                    <div><input type="checkbox" value="200" name="gymClassName" id="cyclingClassID" /><p>Male</p></div>
                     <p>Price: 10 classes for $200</p>
-                </div>
-    
+                </div>   
 </div>
-
     <!-- memebership detail section -->
 <div class="memberDetailwrapper">
 
@@ -71,9 +66,8 @@
     <div><input type="text" name="age" id="ageID" /><p>Member Age</p></div>
     <div><input type="text" name="email" id="emailID" /><p>Email</p></div>
     <div><input type="text" name="phone" id="phoneID" /><p>Phone Number</p></div>
-
 </div>
-
+<input type="button" onclick="memberInfoFunc()" value="Submit"/>
  <!-- instrutor or no  section -->
 <div>
     <h3>Woulld you like to book a personal trainer?</h3>
@@ -87,9 +81,9 @@
         <div><input type="radio" name="subcribeMY" id="yearlyyPayID" /><p>Yearly</p>  
 </div>
 
-<button>Submit</button>
+
 
 </form>
-    <script src="index.js"></script>
+
 </body>
 </html>
