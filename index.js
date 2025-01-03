@@ -18,30 +18,27 @@ function memberInfoFunc() {
 
   //line 20 read the value = "" type of memeber ship type and price
   typeMembership = document.memberForm.memberType.value;
+  var position = typeMembership.indexOf(':')
+  var membershipName = typeMembership.substring(0,position)
+  var membershipCost = typeMembership.substring(position+1)
   gymClassName = document.memberForm.gymClassName;
-
-
-
-
 
   // we continue to do make check box class read show on console
 
-
-
-
-
-
-
   for (i=0; i<gymClassName.length; i++){
    if(gymClassName[i].checked == true){
-      totalCost = totalCost + (gymClassName[i].value)
+      totalCost = totalCost + parseInt(gymClassName[i].value)
+   
    }
   }
 
 
-  totalCost = parseInt(typeMembership);
+  totalCost += parseInt(membershipCost);
   validateInputboxFill();
   console.log(totalCost);
+
+document.getElementById('finalCost').innerText = "Final Cost: " + totalCost;
+document.getElementById('memberTypeID').innerText = " Membership Type: " + membershipName;
 
   // after click submit the input box blank
   document.getElementById("ageID").value = " ";
@@ -64,7 +61,17 @@ function memberInfoFunc() {
 
 }
 
-function memberTypeCost() {}
+function memberTypeCost() {
+
+
+
+
+
+
+
+}
+
+
 function validateInputboxFill() {
   memberName = document.getElementById("memberNameID").value;
   memberEmail = document.getElementById("emailID").value;

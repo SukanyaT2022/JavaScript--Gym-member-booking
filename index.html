@@ -15,9 +15,9 @@
     <!-- memebership type section -->
 <div class="wrapperTypeMemebership">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
-<div><input type="radio" name="memberType" value="300" id="goldMemberID" /><p>Gold Member | $300 Monthly</p>
-<div><input type="radio" name="memberType" value="200" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
-<div><input type="radio" name="memberType" value="100" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
+<div><input type="radio" name="memberType" value="Gold:300" id="goldMemberID" /><p>Gold Member | $300 Monthly</p>
+<div><input type="radio" name="memberType" value="Silver:200" id="silverMemberID" /><p>Silver Member | $200 Monthly</p></div>
+<div><input type="radio" name="memberType" value="Green:100" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
 </div>
 </div>
 
@@ -26,34 +26,34 @@
 <div>
 <img src=""/>
 <p>Yoga</p>
-<div><input type="checkbox"  value="200" name="gymClassName" id="yogaClassID" /><p>Male</p></div>
+<div><input type="checkbox"  value="200" name="gymClassName" id="yogaClassID" /></div>
 <p>Price: 10 classes for $200</p>
 </div>
 
 <div>
         <img src=""/>
         <p>Boxing</p>
-        <div><input type="checkbox" value="300" name="gymClassName" id="boxingClassID" /><p>Male</p></div>
+        <div><input type="checkbox" value="300" name="gymClassName" id="boxingClassID" /></div>
         <p>Price: 10 classes for $300</p>
         </div>
         <div>
             <img src=""/>
             <p>Pilates</p>
-            <div><input type="checkbox" value="250" name="gymClassName" id="pilatesClassID" /><p>Male</p></div>
+            <div><input type="checkbox" value="250" name="gymClassName" id="pilatesClassID" /></div>
             <p>Price: 10 classes for $250</p>
             </div>
 
             <div>
                 <img src=""/>
                 <p>Intense Training</p>
-                <div><input type="checkbox" value="350" name="gymClassName" id="intenseClassID" /><p>Male</p></div>
+                <div><input type="checkbox" value="350" name="gymClassName" id="intenseClassID" /></div>
                 <p>Price: 10 classes for $350</p>
                 </div>
 
                 <div>
                     <img src=""/>
                     <p>Cycling</p>
-                    <div><input type="checkbox" value="200" name="gymClassName" id="cyclingClassID" /><p>Male</p></div>
+                    <div><input type="checkbox" value="200" name="gymClassName" id="cyclingClassID" /></div>
                     <p>Price: 10 classes for $200</p>
                 </div>   
 </div>
@@ -82,8 +82,13 @@
 </div>
 
 
-
 </form>
+<div class="finalPrice">
+    <p id="memberTypeID">Membership Type</p>
+<p id="finalCost">Final Cost : 0</p>
+
+
+</div>
 
 </body>
 </html>
