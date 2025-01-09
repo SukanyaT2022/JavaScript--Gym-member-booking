@@ -15,6 +15,8 @@ function memberInfoFunc() {
   memberAge = document.getElementById("ageID").value;
   memberEmail = document.getElementById("emailID").value;
   memberPhone = document.getElementById("phoneID").value;
+monthlyYearly = document.memberForm.subcribeMY.value;
+
 
   //line 20 read the value = "" type of memeber ship type and price
   typeMembership = document.memberForm.memberType.value;
@@ -32,18 +34,27 @@ function memberInfoFunc() {
       classNameType = gymClassName[i].value.substring(0, position);//read before :
       membershipCost = gymClassName[i].value.substring(position + 1);//read after:
       totalCost = totalCost + parseInt(membershipCost);
-      captureClass = captureClass + classNameType + ", ";
+      captureClass = captureClass + classNameType + " - $" + membershipCost + "<br>";
 
     }
   }
 captureClass = captureClass.substring(0,captureClass.length-2)
-  totalCost += parseInt(membershipCost);
+if(monthlyYearly == 'monthly'){
+  totalCost += parseInt(membershipCost); 
+}
+ 
   validateInputboxFill();
   console.log(totalCost);
 
-  document.getElementById("finalCost").innerText = "Final Cost: " + totalCost;
+if (monthlyYearly == "yearly"){
+  totalCost += parseInt(membershipCost) * 12
+  totalCost = totalCost - totalCost * 0.2
+}
+var taxCost = totalCost + totalCost * 0.12
+
+  document.getElementById("finalCost").innerHTML = "Final Cost: $" + totalCost + "<br> Final cost after 12% tax: $" + taxCost;
   document.getElementById("memberTypeID").innerHTML =
-    " Membership Type: " + membershipName + "<br>" + "Class Type: " + captureClass;
+    " Membership Type: " + membershipName + " ($" + membershipCost + " ) monthly and ($"+ parseInt(membershipCost) * 12 + ") yearly <br>" + "<b>Class Type: </b><br>" + captureClass;
 
 
   // after click submit the input box blank
