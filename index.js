@@ -47,8 +47,10 @@ if(monthlyYearly == 'monthly'){
   console.log(totalCost);
 
 if (monthlyYearly == "yearly"){
-  totalCost += parseInt(membershipCost) * 12
-  totalCost = totalCost - totalCost * 0.2
+  let cal20off = parseInt(membershipCost) * 12
+  totalCost += cal20off * 0.8
+  
+  // totalCost = totalCost - totalCost * 0.2
 }
 var taxCost = totalCost + totalCost * 0.12
 
