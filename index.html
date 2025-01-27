@@ -97,38 +97,43 @@
     </div>
  </div>
  
-
-
      <!-- navbar end -->
-
     <form name="memberForm">
-<div class="container">
-
-   
+<div class="container py-10">  
     <!-- memebership type section -->
      <h2 class="text-center my-10 font-semibold text-2xl ">Membership Plans</h2>
 <div class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
+
 <div class="w-[30%] bg-green-200 h-[300px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
-   <input type="radio" name="memberType" value="Gold:300" id="goldMemberID" />
-   <p>Gold Member <br> $300 Monthly</p>
+   <input type="radio" name="memberType" value="Gold:300" id="goldMemberID" class="my-3" />
+   <p class="text-xl font-semibold">Gold Member <br> $300<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
 
-<div class="w-[30%] bg-blue-200" >
+<div class="w-[30%] bg-green-200 h-[300px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
    <input type="radio" name="memberType" value="Silver:200" id="silverMemberID" />
-   <p>Silver Member | $200 Monthly</p>
+   <p class="text-xl font-semibold">Silver Member <br> $200<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
-
-<div class="w-[30%] bg-red-800"><input type="radio" name="memberType" value="Green:100" id="greenMembeID" /><p>Green Member | $100 Monthly</p></div>
+<div class="w-[30%] bg-green-200 h-[300px]">
+   <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
+   <input type="radio" name="memberType" value="Green:100" id="greenMembeID" />
+   <p class="text-xl font-semibold">Green Member <br> $100<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
+</div>
 
 </div>
 
 <div>
-    <h3>Gym Classes</h3>
+
+  <!-- gym class section  -->
+   <div class="gymClass flex">
+      <div class="imgGymClassLeftside md:w-1/2 w-full">
+   
+      </div>
+<div class="wrapperGymClassRightside md:w-1/2 w-full">
 <div>
-<img src=""/>
+
 <p>Yoga</p>
 <div><input type="checkbox"  value="Yoga:200" name="gymClassName" id="yogaClassID" /></div>
 <p>Price: 10 classes for $200</p>
@@ -160,7 +165,10 @@
                     <div><input type="checkbox" value="Cycling:200" name="gymClassName" id="cyclingClassID" /></div>
                     <p>Price: 10 classes for $200</p>
                 </div>   
+               </div>      
 </div>
+<!-- end gym class div -->
+
     <!-- memebership detail section -->
 <div class="memberDetailwrapper">
 
@@ -187,11 +195,11 @@
 
 
 </form>
+
 <div class="finalPrice">
     <p id="memberTypeID">Membership Type</p>
 <p id="finalCost">Final Cost : 0</p>
-
-
+</div>
 </div>
 <script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
