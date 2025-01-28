@@ -98,7 +98,18 @@
  </div>
  
      <!-- navbar end -->
+
     <form name="memberForm">
+        <!-- memebership detail section -->
+<div class="memberDetailwrapper">
+
+   <div><input type="text" name="memberName" id="memberNameID" placeholder="Your name"/><p id="memberNamePtagID">Member Name</p>
+   <div><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
+   <div><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
+   <div><input type="text" name="age" id="ageID" placeholder="Age" /><p>Member Age</p></div>
+   <div><input type="text" name="email" id="emailID" placeholder="Your Email"/><p id="memberEmailPtagID">Email</p></div>
+   <div><input type="text" name="phone" id="phoneID" placeholder="Your Phone No."/><p id="memberPhonePtagID">Phone Number</p></div>
+</div>
 <div class="container py-10">  
     <!-- memebership type section -->
      <h2 class="text-center my-10 font-semibold text-2xl ">Membership Plans</h2>
@@ -173,17 +184,8 @@
 </div>
 <!-- end gym class div -->
 
-    <!-- memebership detail section -->
-<div class="memberDetailwrapper">
+  
 
-    <div><input type="text" name="memberName" id="memberNameID" placeholder="Your name"/><p id="memberNamePtagID">Member Name</p>
-    <div><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
-    <div><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
-    <div><input type="text" name="age" id="ageID" placeholder="Age" /><p>Member Age</p></div>
-    <div><input type="text" name="email" id="emailID" placeholder="Your Email"/><p id="memberEmailPtagID">Email</p></div>
-    <div><input type="text" name="phone" id="phoneID" placeholder="Your Phone No."/><p id="memberPhonePtagID">Phone Number</p></div>
-</div>
-<input type="button" onclick="memberInfoFunc()" value="Submit"/>
  <!-- instrutor or no  section -->
 <div>
     <h3>Woulld you like to book a personal trainer?</h3>
@@ -193,8 +195,8 @@
 
 <div>
     <h3>Woulld you like to subcribe monthly or yearly?</h3>
-    <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" /><p>Monthly</p>  
-        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly"/><p>Yearly</p>  
+    <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  
+        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p>  
 </div>
 
 
@@ -202,8 +204,9 @@
 
 <div class="finalPrice">
     <p id="memberTypeID">Membership Type</p>
-<p id="finalCost">Final Cost : 0</p>
+
 </div>
+<input type="button" onclick="memberInfoFunc()" value="Submit"/>
 </div>
 <script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
