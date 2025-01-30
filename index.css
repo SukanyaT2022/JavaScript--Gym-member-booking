@@ -18,3 +18,9 @@ background-size: cover;
 .targetH3InterestIn{
     margin-top: 5px!important;
 }
+
+/*line 209 index.html- hide personal 4 8 12 session until click personal session */
+.personalSession{
+    /* display: none; */
+    visibility: hidden;
+}

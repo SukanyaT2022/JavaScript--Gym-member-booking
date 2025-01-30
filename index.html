@@ -99,18 +99,31 @@
  
      <!-- navbar end -->
 
+
+
+   <!-- image on top position -->
+   <!-- <div class="imgGymClassLeftside md:w-1/2 w-full h-96 absolute top-32 right-5">
+
+   </div> -->
+ <div>
+
     <form name="memberForm">
         <!-- memebership detail section -->
-<div class="memberDetailwrapper">
-
-   <div><input type="text" name="memberName" id="memberNameID" placeholder="Your name"/><p id="memberNamePtagID">Member Name</p>
+<div class="wrapNameInput flex ">
+<div class="memberDetailwrapper  bg-red-200 ">
+   <div><input type="text" name="memberName" id="memberNameID" placeholder="Your name"/><p id="memberNamePtagID">Member Name</p></div>
    <div><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
    <div><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
    <div><input type="text" name="age" id="ageID" placeholder="Age" /><p>Member Age</p></div>
    <div><input type="text" name="email" id="emailID" placeholder="Your Email"/><p id="memberEmailPtagID">Email</p></div>
    <div><input type="text" name="phone" id="phoneID" placeholder="Your Phone No."/><p id="memberPhonePtagID">Phone Number</p></div>
 </div>
-<div class="container py-10">  
+<div class="imageSide">
+   <img src="https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" width="400px">
+</div>
+</div>
+
+<div class="container py-10 ">  
     <!-- memebership type section -->
      <h2 class="text-center my-10 font-semibold text-2xl ">Membership Plans</h2>
 <div class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center">
@@ -189,24 +202,34 @@
  <!-- instrutor or no  section -->
 <div>
     <h3>Woulld you like to book a personal trainer?</h3>
-    <div><input type="checkbox" name="trainerYN" id="trainerOptionID" /><p>Personal Trainer Option</p>  
-
+<div>
+      <input type="checkbox" name="trainerYN" id="trainerOptionID" onclick="showPersonalSessionFunc()" /><p>Personal Trainer Option</p>  
 </div>
 
+<div class="personalSession" id="personalSessionID">
+<input type="radio" name="personalSessionName"  id="4SessionID" value="4 Sessions/ Month"/><span>4 Sessions</span>
+<input type="radio" name="personalSessionName"  id="8SessionID" value="8 Sessions/ Month"/><span>8 Sessions</span>
+<input type="radio" name="personalSessionName"  id="12SessionID" value="12 Sessions/ Month"/><span>12 Sessions</span>
+</div>
+
+
+
+
+<!-- end personal trainer -->
 <div>
     <h3>Woulld you like to subcribe monthly or yearly?</h3>
     <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  
         <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p>  
 </div>
 
+<div class="finalPrice">
+    <p id="memberTypeID">Membership Type</p>
+</div>
+
+<input type="button" onclick="memberInfoFunc()" value="Submit"/>
 
 </form>
 
-<div class="finalPrice">
-    <p id="memberTypeID">Membership Type</p>
-
-</div>
-<input type="button" onclick="memberInfoFunc()" value="Submit"/>
 </div>
 <script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>

@@ -114,3 +114,10 @@ function validateInputboxFill() {
       "<font color = red> &nbsp *  Member phone number is missing.</font> ";
   }
 }
+
+function showPersonalSessionFunc(){
+  if(document.getElementById('trainerOptionID').checked == true){
+document.getElementById('personalSessionID').style.visibility = 'visible'
+  }
+
+}
