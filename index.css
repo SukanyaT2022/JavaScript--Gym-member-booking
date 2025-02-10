@@ -1,26 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-*{
-    font-family: "Open Sans", serif;
-
+* {
+  font-family: "Open Sans", serif;
 }
-.custumLogo{
-    font-family: "Montserrat", serif;  
-    font-weight: bold;
-    font-size: 20px!important;
- 
+.custumLogo {
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  font-size: 20px !important;
 }
-.imgGymClassLeftside{
-background: url('https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D');
-background-size: cover;
+.imgGymClassLeftside {
+  background: url("https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
 }
-.targetH3InterestIn{
-    margin-top: 5px!important;
+.targetH3InterestIn {
+  margin-top: 5px !important;
 }
 
 /*line 209 index.html- hide personal 4 8 12 session until click personal session */
-.personalSession{
-    /* display: none; */
-    visibility: hidden;
+.personalSession {
+  /* display: none; */
+}
+.styleImgTopLeftSection {
+
+}
+.memberDetailwrapper input[type=text]{
+    width:100%;
+    border: 1px solid grey;
+}
+.memberDetailwrapper input[type=text]:hover{
+cursor:default;
+border: 1px solid black;
+}
+.memberDetailwrapper p{
+margin-bottom: 5px;
 }

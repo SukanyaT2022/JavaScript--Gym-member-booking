@@ -109,17 +109,38 @@
 
     <form name="memberForm">
         <!-- memebership detail section -->
-<div class="wrapNameInput flex ">
-<div class="memberDetailwrapper  bg-red-200 ">
-   <div><input type="text" name="memberName" id="memberNameID" placeholder="Your name"/><p id="memberNamePtagID">Member Name</p></div>
-   <div><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
-   <div><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
-   <div><input type="text" name="age" id="ageID" placeholder="Age" /><p>Member Age</p></div>
-   <div><input type="text" name="email" id="emailID" placeholder="Your Email"/><p id="memberEmailPtagID">Email</p></div>
-   <div><input type="text" name="phone" id="phoneID" placeholder="Your Phone No."/><p id="memberPhonePtagID">Phone Number</p></div>
+<div class="wrapNameInput flex w-full  items-center ">
+<div class="memberDetailwrapper px-14  w-1/2 space-y-6 py-14">
+
+   <div>
+      <p id="memberNamePtagID">Member Name</p>
+      <input type="text" name="memberName" id="memberNameID" placeholder="Your name"/>
+   </div>
+
+<div class="flex ">
+   <div class="flex space-x-2 items-center mr-5"><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
+   <div class="flex space-x-2 items-center"><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
 </div>
-<div class="imageSide">
-   <img src="https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" width="400px">
+
+
+   <div>
+      <p>Member Age</p>
+      <input type="text" name="age" id="ageID" placeholder="Age" />
+   </div>
+
+   <div>
+      <p id="memberEmailPtagID">Email</p>
+      <input type="text" name="email" id="emailID" placeholder="Your Email"/> 
+   </div>
+
+   <div>
+      <p id="memberPhonePtagID">Phone Number</p>
+      <input type="text" name="phone" id="phoneID" placeholder="Your Phone No."/> 
+   </div>
+
+</div>
+<div class="imageSide styleImgTopLeftSection w-1/2">
+   <img src= "https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" class="w-full h-[550px] object-cover">
 </div>
 </div>
 
