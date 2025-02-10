@@ -27,6 +27,21 @@ monthlyYearly = document.memberForm.subcribeMY.value;
   var membershipCost = typeMembership.substring(position + 1);
   gymClassName = document.memberForm.gymClassName;
 
+
+  //personal trainer section 
+var personalTrainer = document.memberForm.personalSessionName.value;
+var personalTrainerCost = 0
+// check the charter at o position is 4 on selected radio button value
+if(personalTrainer.charAt(0) == '4' ){
+personalTrainerCost = 200
+}else if (personalTrainer.charAt(0) == '8' ){
+  personalTrainerCost = 350
+}else if(personalTrainer.charAt(0) == '12' ){
+  personalTrainerCost = 650
+
+}
+
+
   // we continue to do make check box class read show on console
   //extract name and cost
   var captureClass = "<table width=40%>";
@@ -62,7 +77,7 @@ captureClass += "</table>"
   // document.getElementById("finalCost").innerHTML = "Final Cost: $" + totalCost + "<br> Final cost after 12% tax: $" + taxCost;
 
   document.getElementById("memberTypeID").innerHTML =
-    " Membership Type: " + membershipName + " ($" + membershipCost + " ) monthly and ($"+ parseInt(membershipCost) * 12 + ") yearly <br>" + "<b>Class Type: </b><br>" + captureClass;
+    " Membership Type: " + membershipName + " $" + membershipCost + "  monthly | $"+ parseInt(membershipCost) * 12 + " yearly <br>" + "<b>Class Type: </b><br>" + captureClass;
 
 
   // after click submit the input box blank
@@ -83,6 +98,7 @@ captureClass += "</table>"
   // document.getElementById("goldMemberID").checked = false;
   // document.getElementById("silverMemberID").checked = false;
   // document.getElementById("greenMembeID").checked = false;
+ 
 }
 
 function memberTypeCost() {}

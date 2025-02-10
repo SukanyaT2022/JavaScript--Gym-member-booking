@@ -144,9 +144,9 @@
 </div>
 </div>
 
-<div class="container py-10 ">  
-    <!-- memebership type section -->
-     <h2 class="text-center my-10 font-semibold text-2xl ">Membership Plans</h2>
+<div class="container ">  
+    <!-- memebershiptype type section -->
+     <h2 class=" targeth2MembershipPlan text-center font-semibold text-2xl ">Membership Plans</h2>
 <div class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
 
@@ -168,11 +168,13 @@
 </div>
 
 </div>
+<!-- above closing tag for memebershiptype -->
+</div>
 
-<div>
 
-  <!-- gym class section  -->
-   <div class="gymClass flex my-20">
+
+  <!--  start gym class section  -->
+   <div class="gymClass flex ">
       <!-- image left side -->
       <div class="imgGymClassLeftside md:w-1/2 w-full">
    
@@ -187,29 +189,29 @@
    <h2>Personalize your visit</h2>
    <h3 class="text-sm targetH3InterestIn">I'm interested in...</h3>
 <div class="">
-<div><input type="checkbox"  value="Yoga:200" name="gymClassName" id="yogaClassID" class=" border-2  border-gray-400" /><span class="pl-5" >Yoga</span></div>
+<div><input type="checkbox"  value="Yoga:200" name="gymClassName" onclick="memberInfoFunc()" id="yogaClassID" class=" border-2  border-gray-400" /><span class="pl-5" >Yoga</span></div>
 <p class="text-sm mt-2"> 10 classes for $200</p>
 </div>
 
 
 <div>       
-        <div><input type="checkbox" value="Boxing:300" name="gymClassName" id="boxingClassID"  class=" border-2 border-gray-400"/><span class="pl-5">Boxing</span></div>
+        <div><input type="checkbox" value="Boxing:300" name="gymClassName" onclick="memberInfoFunc()"  id="boxingClassID"  class=" border-2 border-gray-400"/><span class="pl-5">Boxing</span></div>
         <p class="text-sm mt-2">10 classes for $300</p>
         </div>
         <div>
          
-            <div><input type="checkbox" value="Pilates:250" name="gymClassName" id="pilatesClassID" class=" border-2 border-gray-400" /><span class="pl-5">Pilates</span></div>
+            <div><input type="checkbox" value="Pilates:250" name="gymClassName" onclick="memberInfoFunc()"  id="pilatesClassID" class=" border-2 border-gray-400" /><span class="pl-5">Pilates</span></div>
             <p class="text-sm mt-2">10 classes for $250</p>
             </div>
 
             <div>
-                <div><input type="checkbox" value="Intense-Traning:350" name="gymClassName" id="intenseClassID" class=" border-2 border-gray-400" /><span class="pl-5">Intense Training</span></div>
+                <div><input type="checkbox" value="Intense-Traning:350" name="gymClassName" onclick="memberInfoFunc()" id="intenseClassID" class=" border-2 border-gray-400" /><span class="pl-5">Intense Training</span></div>
                 <p class="text-sm mt-2">10 classes for $350</p>
                 </div>
 
 
                 <div>
-                    <div><input type="checkbox" value="Cycling:200" name="gymClassName" id="cyclingClassID" class=" border-2 border-gray-400" /><span class="pl-5">Cycling</span></div>
+                    <div><input type="checkbox" value="Cycling:200" name="gymClassName" onclick="memberInfoFunc()" id="cyclingClassID" class=" border-2 border-gray-400" /><span class="pl-5">Cycling</span></div>
                     <p class="text-sm mt-2">10 classes for $200</p>
                 </div>  
                 <!-- close div wrap all class below  -->

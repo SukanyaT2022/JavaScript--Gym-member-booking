@@ -9,6 +9,12 @@
   font-weight: bold;
   font-size: 20px !important;
 }
+/* gym class section  */
+.gymClass{
+margin-top: 150px;
+padding-left: 120px;
+padding-right: 150px;
+}
 .imgGymClassLeftside {
   background: url("https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D");
   background-size: cover;
@@ -34,4 +40,19 @@ border: 1px solid black;
 }
 .memberDetailwrapper p{
 margin-bottom: 5px;
+}
+
+/* seconde section */
+.container{
+margin-top: 150px;
+
+}
+.wrapperTypeMemebership{
+position:relative;
+left:7%;
+margin-top: 50px;
+}
+.targeth2MembershipPlan{
+  position:relative;
+  left:7%;
 }
