@@ -110,7 +110,7 @@
     <form name="memberForm">
         <!-- memebership detail section -->
 <div class="wrapNameInput flex w-full  items-center ">
-<div class="memberDetailwrapper px-14  w-1/2 space-y-6 py-14">
+<div class="memberDetailwrapper bg-[#F3F4F6] h-[550px] px-14  w-1/2 space-y-6 py-14">
 
    <div>
       <p id="memberNamePtagID">Member Name</p>
@@ -146,24 +146,24 @@
 
 <div class="container ">  
     <!-- memebershiptype type section -->
-     <h2 class=" targeth2MembershipPlan text-center font-semibold text-2xl ">Membership Plans</h2>
+     <h2 class=" targeth2MembershipPlan text-center font-semibold text-[25px] ">Membership Plans</h2>
 <div class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
 
-<div class="w-[30%] bg-green-200 h-[300px]">
+<div class="w-[30%] shadow-xl h-[300px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
-   <input type="radio" name="memberType" value="Gold:300" id="goldMemberID" class="my-3" />
+   <input type="radio" name="memberType" value="Gold:300" id="goldMemberID" class="my-5" />
    <p class="text-xl font-semibold">Gold Member <br> $300<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
 
-<div class="w-[30%] bg-green-200 h-[300px]">
+<div class="w-[30%] shadow-xl h-[300px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
-   <input type="radio" name="memberType" value="Silver:200" id="silverMemberID" />
+   <input type="radio" name="memberType" value="Silver:200" id="silverMemberID" class="my-5" />
    <p class="text-xl font-semibold">Silver Member <br> $200<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
-<div class="w-[30%] bg-green-200 h-[300px]">
+<div class="w-[30%] shadow-xl h-[300px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
-   <input type="radio" name="memberType" value="Green:100" id="greenMembeID" />
+   <input type="radio" name="memberType" value="Green:100" id="greenMembeID"  class="my-5"/>
    <p class="text-xl font-semibold">Green Member <br> $100<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
 
@@ -186,7 +186,7 @@
 <!-- main div wrap all class -->
    <div class="wrapGymClass bg-gray-100 p-10 space-y-5">
 
-   <h2>Personalize your visit</h2>
+   <h2 class="text-[25px] font-semibold">Personalize your visit</h2>
    <h3 class="text-sm targetH3InterestIn">I'm interested in...</h3>
 <div class="">
 <div><input type="checkbox"  value="Yoga:200" name="gymClassName" onclick="memberInfoFunc()" id="yogaClassID" class=" border-2  border-gray-400" /><span class="pl-5" >Yoga</span></div>
@@ -223,18 +223,22 @@
   
 
  <!-- instrutor or no  section -->
-<div>
-    <h3>Woulld you like to book a personal trainer?</h3>
-<div>
+<div class="mainBoxPersonalTrainer bg-gray-200 my-[150px] p-20 text-center">
+    <h3 class="font-semibold text-[25px]">Would you like to book a personal trainer?</h3>
+<div class="flex items-center justify-center space-x-2 my-5">
       <input type="checkbox" name="trainerYN" id="trainerOptionID" onclick="showPersonalSessionFunc()" /><p>Personal Trainer Option</p>  
 </div>
 
-<div class="personalSession" id="personalSessionID">
-<input type="radio" name="personalSessionName"  id="4SessionID" value="4 Sessions/ Month"/><span>4 Sessions</span>
-<input type="radio" name="personalSessionName"  id="8SessionID" value="8 Sessions/ Month"/><span>8 Sessions</span>
-<input type="radio" name="personalSessionName"  id="12SessionID" value="12 Sessions/ Month"/><span>12 Sessions</span>
-</div>
+<div class="personalSession space-y-5" id="personalSessionID">
 
+<div class="space-x-2"><input type="radio" name="personalSessionName"  id="4SessionID" value="4 Sessions/ Month"/><span>4 Sessions</span></div>
+
+<div class="space-x-2"><input type="radio" name="personalSessionName"  id="8SessionID" value="8 Sessions/ Month"/><span>8 Sessions</span></div>
+
+<div ><input class="ml-3" type="radio" name="personalSessionName"  id="12SessionID" value="12 Sessions/ Month"/><span class="pl-2">12 Sessions</span></div>
+
+</div>
+</div>
 
 
 

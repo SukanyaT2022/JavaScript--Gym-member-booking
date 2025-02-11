@@ -23,13 +23,11 @@ padding-right: 150px;
   margin-top: 5px !important;
 }
 
-/*line 209 index.html- hide personal 4 8 12 session until click personal session */
-.personalSession {
-  /* display: none; */
-}
+
 .styleImgTopLeftSection {
 
 }
+
 .memberDetailwrapper input[type=text]{
     width:100%;
     border: 1px solid grey;
@@ -55,4 +53,12 @@ margin-top: 50px;
 .targeth2MembershipPlan{
   position:relative;
   left:7%;
+}
+
+/* personal trainer section */
+.mainBoxPersonalTrainer{
+
+}
+.personalSession {
+
 }
