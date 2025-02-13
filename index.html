@@ -109,6 +109,8 @@
 
     <form name="memberForm">
         <!-- memebership detail section -->
+         <!-- first section -->
+         <section>
 <div class="wrapNameInput flex w-full  items-center ">
 <div class="memberDetailwrapper bg-[#F3F4F6] h-[550px] px-14  w-1/2 space-y-6 py-14">
 
@@ -143,7 +145,12 @@
    <img src= "https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" class="w-full h-[550px] object-cover">
 </div>
 </div>
+</section>
 
+<!-- end section 1 -->
+
+<!-- start section 2 -->
+ <section>
 <div class="container ">  
     <!-- memebershiptype type section -->
      <h2 class=" targeth2MembershipPlan text-center font-semibold text-[25px] ">Membership Plans</h2>
@@ -169,10 +176,15 @@
 
 </div>
 <!-- above closing tag for memebershiptype -->
+<p id="chooseOneMembreshipTypeID"></p>
 </div>
+</section>
+
+<!-- end section 2 -->
 
 
-
+<!-- start section 3 -->
+ <section>>
   <!--  start gym class section  -->
    <div class="gymClass flex ">
       <!-- image left side -->
@@ -218,11 +230,13 @@
                </div>
                </div>      
 </div>
-<!-- end gym class div -->
+</section>
+<!-- end section 3- gym class div -->
 
   
-
+<!-- start section 4 personal trainer-->
  <!-- instrutor or no  section -->
+  <section>
 <div class="mainBoxPersonalTrainer bg-gray-200 my-[150px] p-20 text-center">
     <h3 class="font-semibold text-[25px]">Would you like to book a personal trainer?</h3>
 <div class="flex items-center justify-center space-x-2 my-5">
@@ -240,21 +254,29 @@
 
 </div>
 </div>
+</section>
+<!-- end section 4 -->
 
-
-
-<!-- end personal trainer -->
+<!-- start section 5 -->
+<section>
 <div>
     <h3>Woulld you like to subcribe monthly or yearly?</h3>
-    <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  
-        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p>  
+    <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  </div>
+        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p> </div>
+        <p id="validateYearlyMonthlyID"></p>
 </div>
 
+</section>
+<!-- end section 5 -->
+
+<!-- start final section 6 - final price -->
+ <section>
 <div class="finalPrice">
     <p id="memberTypeID">Membership Type</p>
 </div>
-
-<input type="button" onclick="memberInfoFunc()" value="Submit"/>
+</section>
+ <!-- end final section -->
+<input type="button" onclick="validateInputboxFill()" value="Submit"/>
 
 </form>
 

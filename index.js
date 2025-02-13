@@ -130,8 +130,10 @@ function validateInputboxFill() {
   memberName = document.getElementById("memberNameID").value;
   memberEmail = document.getElementById("emailID").value;
   memberPhone = document.getElementById("phoneID").value;
+  typeMembership = document.memberForm.memberType.value;
+  monthlyYearly = document.memberForm.subcribeMY.value;
 
-  // remove error red message warning * when user type on that box
+  // create paragraph to show error--remove error red message warning * when user type on that box
   document.getElementById("memberNamePtagID").innerHTML = " ";
   document.getElementById("memberEmailPtagID").innerHTML = " ";
   document.getElementById("memberPhonePtagID").innerHTML = " ";
@@ -152,7 +154,16 @@ function validateInputboxFill() {
       "Member Phone No." +
       "<font color = red> &nbsp *  Member phone number is missing.</font> ";
   }
+  if( typeMembership == ""){
+    document.getElementById("chooseOneMembreshipTypeID").innerHTML =
+    "<font color = red> &nbsp * Please choose one of the membership types</font> ";
 }
+if( typeMembership == ""){
+  document.getElementById("validateYearlyMonthlyID").innerHTML =
+  "<font color = red> &nbsp * Please choose yearly or monthly memebership</font> ";
+}
+  }
+
 
 //func hide the option of personal trainer until click check box then it show 3 options of personal trainer
 function showPersonalSessionFunc() {
@@ -178,3 +189,25 @@ function showPersonalSessionFunc() {
       "hidden";
   }
 }
+
+// section function
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  let currentIndex = 0;
+  
+  function scrollToNextSection() {
+  if (currentIndex < sections.length - 1) {
+  currentIndex++;
+  sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+  }
+  }
+  
+  // Example: Scroll to next section when user clicks inside a section
+  sections.forEach((section, index) => {
+  section.addEventListener("click", function () {
+  if (index === currentIndex) {
+  scrollToNextSection();
+  }
+  });
+  });
+  });
