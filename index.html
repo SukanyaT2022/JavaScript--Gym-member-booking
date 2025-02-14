@@ -98,9 +98,6 @@
  </div>
  
      <!-- navbar end -->
-
-
-
    <!-- image on top position -->
    <!-- <div class="imgGymClassLeftside md:w-1/2 w-full h-96 absolute top-32 right-5">
 
@@ -110,10 +107,11 @@
     <form name="memberForm">
         <!-- memebership detail section -->
          <!-- first section -->
-         <section>
+         <section class="h-screen bg-red-400">
 <div class="wrapNameInput flex w-full  items-center ">
-<div class="memberDetailwrapper bg-[#F3F4F6] h-[550px] px-14  w-1/2 space-y-6 py-14">
-
+   
+<div class="memberDetailwrapper bg-[#F3F4F6] h-screen px-14  w-1/2 space-y-6 py-14">
+<h2 class="font-bold text-4xl leading-normal mb-16 mt-10">Unlimited Signature Classes  <br> + Unbeatable Results</h2>
    <div>
       <p id="memberNamePtagID">Member Name</p>
       <input type="text" name="memberName" id="memberNameID" placeholder="Your name"/>
@@ -123,8 +121,6 @@
    <div class="flex space-x-2 items-center mr-5"><input type="radio" name="gender" id="maleID" /><p>Male</p></div>
    <div class="flex space-x-2 items-center"><input type="radio" name="gender" id="femaleID" /><p>Female</p></div>
 </div>
-
-
    <div>
       <p>Member Age</p>
       <input type="text" name="age" id="ageID" placeholder="Age" />
@@ -142,33 +138,33 @@
 
 </div>
 <div class="imageSide styleImgTopLeftSection w-1/2">
-   <img src= "https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" class="w-full h-[550px] object-cover">
+   <img src= "https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" class="w-full h-screen object-cover">
 </div>
 </div>
 </section>
 
 <!-- end section 1 -->
 
-<!-- start section 2 -->
- <section>
+<!-- start section 2 membership plan-->
+ <section class="h-screen flex flex-col justify-center item-center">
 <div class="container ">  
     <!-- memebershiptype type section -->
      <h2 class=" targeth2MembershipPlan text-center font-semibold text-[25px] ">Membership Plans</h2>
 <div class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center">
  <!-- name is the same coz user can pick only one option if different name user can choose many option -->
 
-<div class="w-[30%] shadow-xl h-[300px]">
+<div class="w-[30%] shadow-xl h-[400px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
    <input type="radio" name="memberType" value="Gold:300" id="goldMemberID" class="my-5" />
    <p class="text-xl font-semibold">Gold Member <br> $300<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
 
-<div class="w-[30%] shadow-xl h-[300px]">
+<div class="w-[30%] shadow-xl h-[400px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
    <input type="radio" name="memberType" value="Silver:200" id="silverMemberID" class="my-5" />
    <p class="text-xl font-semibold">Silver Member <br> $200<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
 </div>
-<div class="w-[30%] shadow-xl h-[300px]">
+<div class="w-[30%] shadow-xl h-[400px]">
    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-1/2 w-full object-cover"/>
    <input type="radio" name="memberType" value="Green:100" id="greenMembeID"  class="my-5"/>
    <p class="text-xl font-semibold">Green Member <br> $100<spa class="font-medium text-sm pl-2">Monthly</spa> </p>
@@ -183,10 +179,10 @@
 <!-- end section 2 -->
 
 
-<!-- start section 3 -->
- <section>>
+<!-- start section 3 and 4 wrap personal trainer -->
+ <section class="h-screen">
   <!--  start gym class section  -->
-   <div class="gymClass flex ">
+   <div class="gymClass flex pt-16 ">
       <!-- image left side -->
       <div class="imgGymClassLeftside md:w-1/2 w-full">
    
@@ -230,20 +226,18 @@
                </div>
                </div>      
 </div>
-</section>
-<!-- end section 3- gym class div -->
 
-  
+<!-- end section 3- gym class div -->
+ 
 <!-- start section 4 personal trainer-->
- <!-- instrutor or no  section -->
-  <section>
-<div class="mainBoxPersonalTrainer bg-gray-200 my-[150px] p-20 text-center">
+
+<div class="mainBoxPersonalTrainer  my-[30px] p-5 text-center">
     <h3 class="font-semibold text-[25px]">Would you like to book a personal trainer?</h3>
 <div class="flex items-center justify-center space-x-2 my-5">
       <input type="checkbox" name="trainerYN" id="trainerOptionID" onclick="showPersonalSessionFunc()" /><p>Personal Trainer Option</p>  
 </div>
 
-<div class="personalSession space-y-5" id="personalSessionID">
+<div class="personalSession space-x-5 flex item-center justify-center" id="personalSessionID">
 
 <div class="space-x-2"><input type="radio" style="visibility: hidden;" name="personalSessionName"  id="4SessionID" value="4 Sessions/ Month"/><span id="hideTextPersonaltrainID4" style="visibility: hidden;" >4 Sessions | $200</span ></div>
 
@@ -257,8 +251,8 @@
 </section>
 <!-- end section 4 -->
 
-<!-- start section 5 -->
-<section>
+<!-- section wrap  section 5  and 6 -- monthy yearly and summary cost -->
+<section class="h-screen bg-red-400">
 <div>
     <h3>Woulld you like to subcribe monthly or yearly?</h3>
     <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  </div>
@@ -266,11 +260,10 @@
         <p id="validateYearlyMonthlyID"></p>
 </div>
 
-</section>
 <!-- end section 5 -->
 
 <!-- start final section 6 - final price -->
- <section>
+
 <div class="finalPrice">
     <p id="memberTypeID">Membership Type</p>
 </div>
