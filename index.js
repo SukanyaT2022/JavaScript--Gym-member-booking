@@ -192,26 +192,48 @@ function showPersonalSessionFunc() {
 
 // section function
 
-  const sections = document.getElementsByTagName("section");
-  var currentIndex = 0;
-  console.log(sections.length)
-  function scrollToNextSection() {
+  // const sections = document.getElementsByTagName("section");
+  // var currentIndex = 0;
+  // console.log(sections.length)
+  // function scrollToNextSection() {
 
-  if (currentIndex < sections.length - 1) {
-  currentIndex++;
-  console.log(currentIndex)
-  sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-  }
-  }
-  function scrollDownFunc(){
-    console.log("hello")
-    if (currentIndex < sections.length - 1) {
-      currentIndex++;
-       console.log(currentIndex)
-      // sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-    }
-  }
-  
+  // if (currentIndex < sections.length - 1) {
+  // currentIndex++;
+  // console.log(currentIndex)
+  // sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+  // }
+  // }
+  // function scrollDownFunc(){
+  //   console.log("hello")
+  //   if (currentIndex < sections.length - 1) {
+  //     currentIndex++;
+  //      console.log(currentIndex)
+  //     // sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }
+
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const sections = document.querySelectorAll("section");
+//     let currentIndex = 0;
+    
+//     function scrollToNextSection() {
+//         if (currentIndex < sections.length - 1) {
+//             currentIndex++;
+//             sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+//         }
+//     }
+    
+//     // Example: Scroll to next section when user clicks inside a section
+//     sections.forEach((section, index) => {
+//         section.addEventListener("click", function () {
+//             if (index === currentIndex) {
+//                 scrollToNextSection();
+//             }
+//         });
+//     });
+// });
+
+
 
   
   // Example: Scroll to next section when user clicks inside a section
