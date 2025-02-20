@@ -8,14 +8,14 @@
    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="index.css" >
    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Booking Gym App</title>
+    <title>Power Gym</title>
   
 </head>
 <body> 
     <!-- Navbar start -->
     
 <nav class="flex items-center pl-7 bg-black py-5 ">
-<a href="index.html" class="text-white custumLogo">Oasis Elite</a>
+<a href="index.html" class="text-white custumLogo">Power Gym</a>
 </nav>
 <!-- drawer init and show -->
 <div class="text-center">
@@ -139,7 +139,7 @@
 
 </div>
 <div class="imageSide styleImgTopLeftSection w-1/2">
-   <img src= "https://images.unsplash.com/photo-1737202325171-0f62f8296922?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" class="w-full h-screen object-cover">
+   <img src= "https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&w=1200" class="w-full h-screen object-cover">
 </div>
 </div>
 <!-- <button onclick="scrollDownFunc()">Next > </button> -->
@@ -186,7 +186,7 @@
 <!-- start section 3 and 4 wrap personal trainer -->
  <section  class="targetSection h-screen">
   <!--  start gym class section  -->
-   <div class="gymClass flex ">
+   <div class="gymClass flex">
       <!-- image left side -->
       <div class="imgGymClassLeftside md:w-1/2 w-full">
    
@@ -255,31 +255,30 @@
 </section>
 <!-- end section 4 -->
 
-<!-- section wrap  section 5  and 6 -- monthy yearly and summary cost -->
-<section  class="targetSection h-screen bg-red-400 flex">
-   <div class="wrapAllFinalpriceSide w-1/2">
-<div>
-    <h3>Woulld you like to subcribe monthly or yearly?</h3>
-    <div><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  </div>
-        <div><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p> </div>
+<!--  main summary section summary cost amd image -->
+<section  class="targetSection h-screen  flex item-center gymClass mt-0">
+
+   <!-- left side final cost -->
+   <div class="wrapAllFinalpriceSide w-1/2 bg-[#F3F4F6] h-[80vh] p-10 space-y-5">
+      <h3 class="text-[25px] font-semibold">Would you like to subscribe monthly or yearly?</h3>
+<div class="flex space-x-10 items-center">
+    <div class="flex space-x-2 items-center"><input type="radio" name="subcribeMY" id="monthlyPayID" value="monthly" onclick="memberInfoFunc()"/><p>Monthly</p>  </div>
+        <div class="flex space-x-2 items-center"><input type="radio" name="subcribeMY" id="yearlyyPayID" value="yearly" onclick="memberInfoFunc()"/><p>Yearly</p> </div>
         <p id="validateYearlyMonthlyID"></p>
 </div>
 
-<!-- end section 5 -->
-
-<!-- start final section 6 - final price -->
-
 <div class="finalPrice">
-    <p id="memberTypeID">Membership Type</p>
+    <p id="memberTypeID" class="mb-5">Membership Type</p>
 
 </div>
 <!-- <input type="button" class="bg-green-200" onclick="validateInputboxFill()" value="Submit"/> -->
-<button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+<button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-black hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
   Submit
    </button>
 </div>
-<!-- image section final price -->
-<div class="imagePrice w-1/2">
+
+<!--right side image section final price -->
+<div class="imagePrice w-1/2 ml-16">
 
 
 </div>

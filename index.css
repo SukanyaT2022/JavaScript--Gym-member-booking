@@ -7,7 +7,7 @@
 .custumLogo {
   font-family: "Montserrat", serif;
   font-weight: bold;
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 /* gym class section  */
 .gymClass{
@@ -71,6 +71,12 @@ padding-left: 45%;
 /* image on final price */
 .imagePrice{
 background-image: url('https://images.unsplash.com/photo-1550345332-09e3ac987658?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3ltfGVufDB8fDB8fHww');
-background-color: aqua;
-height: 50vh;
+background-size: cover;
+height: 80vh;
+}
+
+table{
+  background-color: green;
+  width: 100%;
+  margin-top: 20px;
 }
