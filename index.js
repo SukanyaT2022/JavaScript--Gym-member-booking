@@ -8,6 +8,7 @@ let memberPhone = " ";
 let typeMembership = " ";
 let gymClassName = " ";
 let totalCost = 0;
+let finalSubmit = true;
 
 // submit button claculate entire calculation
 function memberInfoFunc() {
@@ -85,6 +86,9 @@ function memberInfoFunc() {
 
     // totalCost = totalCost - totalCost * 0.2
   }
+  
+  if(monthlyYearly !== ""){
+    document.getElementById('submitBtnID').style.visibility = "visible"
   var taxCost = totalCost + totalCost * 0.12;
   captureClass += "<tr><td>" + personalTrainer + "</td><td>" +"$" +personalTrainerCost+"</td></tr>"
   captureClass += "<tr><td> Final Cost</td><td> $" + totalCost + "</td></tr>";
@@ -103,27 +107,14 @@ function memberInfoFunc() {
     " yearly <br>" +
     "<b>Class Type: </b><br>" +
     captureClass;
-
-  // after click submit the input box blank
-  // document.getElementById("ageID").value = " ";
-  // document.getElementById("emailID").value = " ";
-  // document.getElementById("phoneID").value = " ";
-  // document.getElementById("memberNameID").value = " ";
-  // after click submit radio button blank
-  // document.getElementById("maleID").checked = false;
-  // document.getElementById("femaleID").checked = false;
-
-  // document.getElementById("yogaClassID").checked = false;
-  // document.getElementById("boxingClassID").checked = false;
-  // document.getElementById("pilatesClassID").checked = false;
-  // document.getElementById("intenseClassID").checked = false;
-  // document.getElementById("cyclingClassID").checked = false;
-
-  // document.getElementById("goldMemberID").checked = false;
-  // document.getElementById("silverMemberID").checked = false;
-  // document.getElementById("greenMembeID").checked = false;
+    document.getElementById('chooseMonthlyOrYearlyPtagID').innerHTML = ""
+  
 }
-
+else{
+  finalSubmit = false;
+  document.getElementById('chooseMonthlyOrYearlyPtagID').innerHTML = "<font color = red> Please select monthly or yearly membership"
+}
+}
 function memberTypeCost() {}
 
 function validateInputboxFill() {
@@ -139,26 +130,31 @@ function validateInputboxFill() {
   document.getElementById("memberPhonePtagID").innerHTML = " ";
 
   if (memberName == "") {
+    finalSubmit = false
     document.getElementById("memberNamePtagID").innerHTML =
       "Member Name" +
       "<font color = red> &nbsp * Member Name is missing.</font> ";
   }
   if (memberEmail == "") {
+    finalSubmit = false
     document.getElementById("memberEmailPtagID").innerHTML =
       "Member Email" +
       "<font color = red> &nbsp * Member email is missing.</font> ";
   }
 
   if (memberPhone == "") {
+    finalSubmit = false
     document.getElementById("memberPhonePtagID").innerHTML =
       "Member Phone No." +
       "<font color = red> &nbsp *  Member phone number is missing.</font> ";
   }
   if( typeMembership == ""){
+    finalSubmit = false
     document.getElementById("chooseOneMembreshipTypeID").innerHTML =
     "<font color = red> &nbsp * Please choose one of the membership types</font> ";
 }
 if( typeMembership == ""){
+  finalSubmit = false
   document.getElementById("validateYearlyMonthlyID").innerHTML =
   "<font color = red> &nbsp * Please choose yearly or monthly memebership</font> ";
 }
@@ -190,58 +186,3 @@ function showPersonalSessionFunc() {
   }
 }
 
-// section function
-
-  // const sections = document.getElementsByTagName("section");
-  // var currentIndex = 0;
-  // console.log(sections.length)
-  // function scrollToNextSection() {
-
-  // if (currentIndex < sections.length - 1) {
-  // currentIndex++;
-  // console.log(currentIndex)
-  // sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-  // }
-  // }
-  // function scrollDownFunc(){
-  //   console.log("hello")
-  //   if (currentIndex < sections.length - 1) {
-  //     currentIndex++;
-  //      console.log(currentIndex)
-  //     // sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-  //   }
-  // }
-
-//   document.addEventListener("DOMContentLoaded", function () {
-//     const sections = document.querySelectorAll("section");
-//     let currentIndex = 0;
-    
-//     function scrollToNextSection() {
-//         if (currentIndex < sections.length - 1) {
-//             currentIndex++;
-//             sections[currentIndex].scrollIntoView({ behavior: "smooth" });
-//         }
-//     }
-    
-//     // Example: Scroll to next section when user clicks inside a section
-//     sections.forEach((section, index) => {
-//         section.addEventListener("click", function () {
-//             if (index === currentIndex) {
-//                 scrollToNextSection();
-//             }
-//         });
-//     });
-// });
-
-
-
-  
-  // Example: Scroll to next section when user clicks inside a section
-  // sections.forEach((section, index) => {
-  // section.addEventListener("click", function () {
-  // if (index === currentIndex) {
-  // scrollToNextSection();
-  // }
-  // });
-  // });
-  // });
