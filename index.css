@@ -80,3 +80,21 @@ table{
   width: 100%;
   margin-top: 20px;
 }
+/* ipad pro */
+@media  screen and (max-width: 1024px) {
+.imageSide img{
+  height: 400px;
+}
+}
+/* ipad medium air */
+@media  screen and (max-width: 992px) {
+
+}
+/* ipad mini */
+@media  screen and (max-width: 768px) {
+
+}
+/* phone */
+@media  screen and (max-width: 600px) {
+
+  }
