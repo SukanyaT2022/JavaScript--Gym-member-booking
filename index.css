@@ -4,6 +4,9 @@
 * {
   font-family: "Open Sans", serif;
 }
+html,body{
+  overflow-x: hidden;
+}
 .custumLogo {
   font-family: "Montserrat", serif;
   font-weight: bold;
@@ -45,6 +48,7 @@ margin-bottom: 5px;
 margin-top: 30px;
 
 }
+/* hold 3 pics and text in membership option */
 .wrapperTypeMemebership{
 position:relative;
 left:7%;
@@ -85,6 +89,21 @@ table{
 .imageSide img{
   height: 400px;
 }
+/* hold 3 pics and text in membership option */
+.wrapperTypeMemebership{
+  position:relative;
+  left:0%;
+  margin-top: 50px;
+  }
+.targetSection h2{
+  left: 0;
+}
+/* gym class section-- peronalize visit- wrap  */
+.gymClass{
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
 }
 /* ipad medium air */
 @media  screen and (max-width: 992px) {
