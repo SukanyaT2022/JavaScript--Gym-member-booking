@@ -51,12 +51,11 @@ margin-top: 30px;
 /* hold 3 pics and text in membership option */
 .wrapperTypeMemebership{
 position:relative;
-left:7%;
 margin-top: 50px;
 }
 .targeth2MembershipPlan{
   position:relative;
-  left:7%;
+
 }
 
 /* personal trainer section */
@@ -70,7 +69,7 @@ margin-top: 50px;
 /* memebership type green gols silver */
 #chooseOneMembreshipTypeID{
 margin-top: 50px;
-padding-left: 45%;
+text-align: center;
 }
 /* image on final price */
 .imagePrice{
@@ -103,6 +102,10 @@ table{
   margin-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
+  }
+  /* image on final price */
+.imagePrice{
+  height: 50vh;
   }
 }
 /* ipad medium air */
