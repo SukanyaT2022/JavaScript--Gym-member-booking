@@ -66,7 +66,7 @@ margin-top: 50px;
 
 }
 
-/* memebership type green gols silver */
+/*warning memebership type green gols silver */
 #chooseOneMembreshipTypeID{
 margin-top: 50px;
 text-align: center;
@@ -118,5 +118,19 @@ table{
 }
 /* phone */
 @media  screen and (max-width: 600px) {
-
+  .imageSide img{
+    height: 300px;
+  }
+  .imgGymClassLeftside{
+    height: 300px;
+  }
+  /*warning memebership type green gols silver */
+#chooseOneMembreshipTypeID{
+  margin-top: 10px;
+  margin-bottom: -30px;
+  text-align: center;
+  }
+  .imagePrice{
+    height:350px;
+    }
   }

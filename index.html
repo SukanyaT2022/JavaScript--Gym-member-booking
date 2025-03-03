@@ -244,9 +244,9 @@
             class="wrapNameInput flex flex-col-reverse xl:flex-row w-full items-center"
           >
             <div
-              class="memberDetailwrapper bg-[#F3F4F6] xl:h-screen md:h-auto px-14 xl:w-1/2 w-4/5 space-y-6 xl:py-14 py-16 pb-20"
+              class="memberDetailwrapper bg-[#F3F4F6] xl:h-screen md:h-auto sm:px-14 px-5 xl:w-1/2 w-4/5 space-y-6 xl:py-14 sm:py-16  py-10 sm:pb-20 pb-14"
             >
-              <h2 class="font-bold text-4xl leading-normal xl:mb-16 xl:mt-10">
+              <h2 class="font-bold sm:text-4xl text-lg leading-normal xl:mb-16 xl:mt-10">
                 Unlimited Signature Classes <br />
                 + Unbeatable Results
               </h2>
@@ -298,7 +298,7 @@
             <div class="imageSide xl:w-1/2 w-4/5">
               <img
                 src="https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                class="w-full xl:h-screen object-cover"
+                class="w-full xl:h-screen sm:h-auto  object-cover"
               />
             </div>
           </div>
@@ -315,17 +315,17 @@
           <div class="container xl:w-full sm:w-4/5 xl:pt-16 ">
             <!-- memebershiptype type section -->
             <h2
-              class="targeth2MembershipPlan text-center font-semibold text-[30px] mb-5"
+              class="targeth2MembershipPlan text-center font-semibold sm:text-[30px] text-[20px] sm:mb-5 my-5"
             >
               Membership Options
             </h2>
 
             <div
-              class="wrapperTypeMemebership flex flex-col md:flex-row justify-evenly text-center"
+              class="wrapperTypeMemebership flex flex-col md:flex-row sm:justify-evenly justify-center  items-center text-center"
             >
               <!-- name is the same coz user can pick only one option if different name user can choose many option -->
 
-              <div class="w-[30%] shadow-xl xl:h-[450px] sm:h-[400px]">
+              <div class="sm:w-[30%] w-[80%] shadow-xl xl:h-[450px] sm:h-[400px] h-auto pb-5 sm:mb-0 mb-10 ">
                 <img
                   src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="h-[60%] w-full object-cover"
@@ -343,7 +343,7 @@
                 </p>
               </div>
 
-              <div class="w-[30%] shadow-xl xl:h-[450px] sm:h-[400px]">
+              <div class="sm:w-[30%] w-[80%] shadow-xl xl:h-[450px] sm:h-[400px] h-auto pb-5 sm:mb-0 mb-10 ">
                 <img
                   src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="h-[60%] w-full object-cover"
@@ -360,7 +360,7 @@
                   $200<spa class="font-medium text-sm pl-2">Monthly</spa>
                 </p>
               </div>
-              <div class="w-[30%] shadow-xl xl:h-[450px] sm:h-[400px]">
+              <div class="sm:w-[30%] w-[80%] shadow-xl xl:h-[450px] sm:h-[400px] h-auto pb-5 sm:mb-0 mb-10 ">
                 <img
                   src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="h-[60%] w-full object-cover"
@@ -383,21 +383,20 @@
           </div>
         </section>
 
-        <!-- end section 2 -->
+        <!-- end section 2 membership type option-->
 
-        <!-- personal 10 classes  -->
-        <!-- start section 3 and 4 wrap personal trainer -->
+        <!-- start personal 10 personal classes  -->
         <section class="targetSection xl:h-screen ">
           <!--  start gym class section  -->
-          <div class="gymClass flex w-full px-14">
+          <div class="gymClass flex  sm:flex-row flex-col w-full sm:px-14 px-10">
             <!-- image left side -->
             <div class="imgGymClassLeftside xl:w-1/2 w-full"></div>
             <!-- right side class -->
 
-            <div class="wrapperGymClassRightside xl:w-1/2 w-full xl:pl-16 pl-10 ">
+            <div class="wrapperGymClassRightside xl:w-1/2 w-full xl:pl-16 sm:pl-10  ">
               <!-- main div wrap all class wrap image and personal class -->
               <div class="wrapGymClass bg-gray-100 p-10 space-y-5">
-                <h2 class="text-[25px] font-semibold">
+                <h2 class="sm:text-[25px] text-[22px] font-semibold">
                   Personalize your visit
                 </h2>
                 <h3 class="text-sm targetH3InterestIn">I'm interested in...</h3>
@@ -498,6 +497,7 @@
             >
               <div class="space-x-2">
                 <input
+                class="sm:inline block mx-auto sm:my-0 my-2"
                   type="radio"
                   style="visibility: hidden"
                   name="personalSessionName"
@@ -510,6 +510,7 @@
 
               <div class="space-x-2">
                 <input
+                class="sm:inline block mx-auto sm:my-0 my-2"
                   type="radio"
                   style="visibility: hidden"
                   name="personalSessionName"
@@ -522,7 +523,8 @@
 
               <div>
                 <input
-                  class="ml-3"
+                class="sm:inline block mx-auto sm:my-0 my-2 sm:ml-3"
+
                   type="radio"
                   style="visibility: hidden"
                   name="personalSessionName"
@@ -538,13 +540,14 @@
             </div>
           </div>
         </section>
+
         <!-- end section 4 -->
 
         <!--  main summary section summary cost amd image -->
-        <section class="targetSection xl:h-screen  flex item-center gymClass mt-0 mb-14">
+        <section class="targetSection xl:h-screen  flex sm:flex-row flex-col-reverse item-center gymClass mt-0 mb-14">
           <!-- left side final cost -->
           <div
-            class="wrapAllFinalpriceSide w-1/2 bg-[#F3F4F6] xl:h-[80vh] min-h-[50vh] max-h-auto p-10 space-y-5"
+            class="wrapAllFinalpriceSide sm:w-1/2 bg-[#F3F4F6] xl:h-[80vh] min-h-[50vh] max-h-auto p-10 space-y-5"
           >
             <h3 class="text-[25px] font-semibold">
               Would you like to subscribe monthly or yearly?
@@ -591,7 +594,7 @@
           </div>
 
           <!--right side image section final price -->
-          <div class="imagePrice w-1/2 xl:ml-16 sm:ml-10"></div>
+          <div class="imagePrice sm:w-1/2 xl:ml-16 sm:ml-10"></div>
 
         </section>
 
