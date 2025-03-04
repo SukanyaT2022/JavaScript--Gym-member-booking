@@ -133,4 +133,8 @@ table{
   .imagePrice{
     height:350px;
     }
+    #memberPhonePtagID,#memberEmailPtagID,#memberNamePtagID {
+display:block;
+
+    }
   }

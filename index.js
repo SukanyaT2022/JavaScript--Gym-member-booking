@@ -133,20 +133,20 @@ function validateInputboxFill() {
     finalSubmit = false
     document.getElementById("memberNamePtagID").innerHTML =
       "Member Name" +
-      "<font color = red> &nbsp * Member Name is missing.</font> ";
+      "<br/><font color = red> &nbsp * Name Required</font> ";
   }
   if (memberEmail == "") {
     finalSubmit = false
     document.getElementById("memberEmailPtagID").innerHTML =
       "Member Email" +
-      "<font color = red> &nbsp * Member email is missing.</font> ";
+      "<br/><font color = red> &nbsp * Email Required</font> ";
   }
 
   if (memberPhone == "") {
     finalSubmit = false
     document.getElementById("memberPhonePtagID").innerHTML =
       "Member Phone No." +
-      "<font color = red> &nbsp *  Member phone number is missing.</font> ";
+      "<br/><font color = red> &nbsp *  Phone Required</font> ";
   }
   if( typeMembership == ""){
     finalSubmit = false
